@@ -1,29 +1,26 @@
-# Machine Learning Assignment 2 – Supervised Learning Flow  
+from pathlib import Path
 
-**Student:** Daniel Gorodnitskiy  
-**ID:** 6378  
+readme_content = """\
+# Titanic - Supervised Learning ML Flow
+
+This project is a solution for an assignment that requires building a supervised learning pipeline using the Titanic dataset (Kaggle format). It includes feature engineering, model training with cross-validation, hyperparameter tuning, and prediction generation.
 
 ---
 
-## 1. Project Overview
-- **Task:** Binary classification – predict passenger survival on the Titanic.  
-- **Dataset:** `titanic_train.csv` & `titanic_test.csv` supplied by the course  
-  (feature details in `taitanic_description.txt`).  
-- **Evaluation metric:** *Macro-averaged F1-score* (5-fold CV).
+## 📁 Files
 
-## 2. Repository Structure
-| Path | Contents |
-|------|----------|
-| `Assignment2_supervised_learning_flow.ipynb` | Main Jupyter notebook |
-| `titanic_submission.csv` | Predictions for test set (ready to upload) |
-| `README.md` | **⇠ this file** |
-| `taitanic_description.txt` | Feature description (supplied) |
+- `Assignment2_supervised_learning_flow.ipynb`: Main notebook with structured parts (experiments, training, evaluation).
+- `titanic_train.csv`: The training dataset.
+- `titanic_test.csv`: The test dataset (without labels).
+- `taitanic_description.txt`: Feature descriptions and field explanations.
+- `titanic_submission.csv`: Model predictions on the test set.
+- `assignment2_ml_flow_instructions.pdf`: Assignment instructions.
 
-## 3. Requirements
+---
+
+## ⚙️ Requirements
+
+Install required Python libraries with:
+
 ```bash
-python >=3.9
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
+pip install numpy pandas matplotlib seaborn scikit-learn
